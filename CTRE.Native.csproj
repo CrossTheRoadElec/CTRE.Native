@@ -95,10 +95,8 @@
     <Reference Include="System" />
   </ItemGroup>
   <PropertyGroup>
-    <PostBuildEvent>cd ../../../..
-call "C:\Program Files (x86)\WinMerge\WinMergeU.exe"  /r /dl "Generated Stubs" /dr "Firmware Files to update" /f *.* "$(SolutionDir)\hero-sdk-source\CTRE.Native\Stubs" "$(SolutionDir)\..\Solutions\HeroX\DeviceCode\ctre_netmf_native"
-CopyPeToFirmware.bat $(ConfigurationName)
-</PostBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
     <PreBuildEvent>
