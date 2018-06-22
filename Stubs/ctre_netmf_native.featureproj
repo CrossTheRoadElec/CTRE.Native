@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <FeatureName>ctre_netmf_native</FeatureName>
+    <Guid>{f2e8121a-b78e-43f5-8671-fcb602f37da0}</Guid>
+    <Description>&lt;Add Feature Description Here&gt;</Description>
+    <Groups />
+    <CTRE_NETMF_NATIVE_FEATUREPROJ>True</CTRE_NETMF_NATIVE_FEATUREPROJ>
+  </PropertyGroup>
+  <ItemGroup>
+    <DriverLibs Include="ctre_netmf_native.$(LIB_EXT)" />
+    <InteropFeature Include="ctre_netmf_native" />
+    <MMP_DAT_CreateDatabase Include="$(BUILD_TREE_CLIENT)\pe\$(ENDIANNESS)\ctre_netmf_native.pe" />
+    <RequiredProjects Include="C:\Users\CoryNess\Documents\C\netmf-interpreter\hero-sdk\hero-sdk-source\CTRE.Native\Stubs\dotnetmf.proj" />
+  </ItemGroup>
+</Project>

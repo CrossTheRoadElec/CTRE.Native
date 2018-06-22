@@ -1,0 +1,30 @@
+<Project DefaultTargets="Build" ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Directory>DeviceCode\Targets\Native\Interop\ctre_netmf_native</Directory>
+    <AssemblyName>ctre_netmf_native</AssemblyName>
+  </PropertyGroup>
+  <Import Project="$(SPOCLIENT)\tools\targets\Microsoft.SPOT.System.Settings" />
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+  </PropertyGroup>
+<ItemGroup>
+<HFile Include="ctre_netmf_native.h" />
+<Compile Include="ctre_netmf_native.cpp" />
+<Compile Include="ctre_netmf_native_CTRE_Native_CAN_mshl.cpp" />
+<HFile Include="ctre_netmf_native_CTRE_Native_CAN.h" />
+<Compile Include="ctre_netmf_native_CTRE_Native_CAN.cpp" />
+<Compile Include="ctre_netmf_native_CTRE_Native_HDU_mshl.cpp" />
+<HFile Include="ctre_netmf_native_CTRE_Native_HDU.h" />
+<Compile Include="ctre_netmf_native_CTRE_Native_HDU.cpp" />
+<Compile Include="ctre_netmf_native_CTRE_Native_Misc_mshl.cpp" />
+<HFile Include="ctre_netmf_native_CTRE_Native_Misc.h" />
+<Compile Include="ctre_netmf_native_CTRE_Native_Misc.cpp" />
+<Compile Include="ctre_netmf_native_CTRE_Native_System_mshl.cpp" />
+<HFile Include="ctre_netmf_native_CTRE_Native_System.h" />
+<Compile Include="ctre_netmf_native_CTRE_Native_System.cpp" />
+<Compile Include="ctre_netmf_native_CTRE_Native_Watchdog_mshl.cpp" />
+<HFile Include="ctre_netmf_native_CTRE_Native_Watchdog.h" />
+<Compile Include="ctre_netmf_native_CTRE_Native_Watchdog.cpp" />
+</ItemGroup>
+<Import Project="$(SPOCLIENT)\tools\targets\Microsoft.SPOT.System.Targets" />
+</Project>
